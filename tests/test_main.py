@@ -7,7 +7,7 @@ def test_sum_two_integers_positive():
 
 
 def test_sum_two_integers_negative():
-    assert sum_two_integers(-2, -4) == -6
+    assert sum_two_integers(-2, -10) == -6
 
 
 def test_sum_two_integers_mixed():
