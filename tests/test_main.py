@@ -3,7 +3,7 @@ from main import sum_two_integers
 
 
 def test_sum_two_integers_positive():
-    assert sum_two_integers(3, 5) == 8
+    assert sum_two_integers(3, 6) == 8
 
 
 def test_sum_two_integers_negative():
