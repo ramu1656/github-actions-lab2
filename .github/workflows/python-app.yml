@@ -20,6 +20,24 @@ jobs:
       uses: actions/setup-python@v3
       with:
         python-version: "3.10"
-    
-    - name: Run Python script
+
+        #add code here to install pytest
+    - name: Install pytest
+      run: pip install pytest
+
+    - name: Run tests
+      run: pytest
+
+      # Collect test coverage
+    - name: Install coverage
+      run: pip install coverage
+
+    - name: Run tests with coverage
+      run: coverage run -m pytest
+
+    - name: Report coverage
+      run: coverage report
+
+    # run main.py  
+    - name: Run main.py
       run: python main.py
